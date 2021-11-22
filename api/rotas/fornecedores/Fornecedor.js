@@ -1,11 +1,6 @@
-const TabelaFornecedor = require('./TabelaFornecedor') <<
-    << << < HEAD
+const TabelaFornecedor = require('./TabelaFornecedor')
 const CampoInvalido = require('../../erros/CampoInvalido')
-const DadosNaoFornecidos = require('../../erros/DadosNaoFornecidos') ===
-    === =
-
-    >>>
-    >>> > 35 fafe976c2033cdbda9e5cd73c3e1b0685d70e6
+const DadosNaoFornecidos = require('../../erros/DadosNaoFornecidos')
 class Fornecedor {
     constructor({
         id,
@@ -25,11 +20,8 @@ class Fornecedor {
         this.versao = versao;
     }
 
-    async criar() { <<
-        << << < HEAD
-        this.validar() ===
-            === = >>>
-            >>> > 35 fafe976c2033cdbda9e5cd73c3e1b0685d70e6
+    async criar() {
+        this.validar()
         const resultado = await TabelaFornecedor.inserir({
             empresa: this.empresa,
             emails: this.emails,

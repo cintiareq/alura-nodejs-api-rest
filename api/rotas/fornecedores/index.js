@@ -68,17 +68,10 @@ roteador.delete('/:idFornecedor', async(requisicao, resposta) => {
         resposta.send(
             JSON.stringify({
                 mensagem: erro.message
-            }) <<
-            << << < HEAD
+            })
+
         );
     }
 });
 
-module.exports = roteador; ===
-=== =
-)
-}
-})
-
-module.exports = roteador >>>
-    >>> > 35 fafe976c2033cdbda9e5cd73c3e1b0685d70e6
+module.exports = roteador;
